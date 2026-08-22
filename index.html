@@ -4,12 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的第一个项目</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .card {
+            width: min(600px, 80%);
+            padding: 50px;
+            text-align: center;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        button {
+            padding: 12px 24px;
+            color: white;
+            background: #667eea;
+            border: 0;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #764ba2;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>你好，这是我的第一个网页！</h1>
-    <p>这是我使用 Git 和 GitHub 管理的第一个项目。</p>
-    <button onclick="alert('GitHub 学习之旅开始了！')">
-        点我试试
-    </button>
+    <main class="card">
+        <h1>你好，这是我的第一个网页！</h1>
+        <p>这是我使用 Git 和 GitHub 管理的第一个项目。</p>
+        <button onclick="alert('GitHub 学习之旅开始了！')">
+            点我试试
+        </button>
+    </main>
 </body>
 </html>
